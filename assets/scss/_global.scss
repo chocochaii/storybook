@@ -139,6 +139,16 @@ a {
   font-weight: $font-weight-300;
   background-color: $color-gray-light;
 
+  i {
+    position: absolute;
+    z-index: 3;
+    left: 9px;
+    bottom: 6px;
+    font-size: 45px;
+    color: $color-white;
+    transform: rotate(45deg);
+  }
+
   &::before {
     content: "";
     position: absolute;
