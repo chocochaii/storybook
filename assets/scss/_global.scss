@@ -166,3 +166,46 @@ a {
     }
   }
 }
+
+// social button
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 7px;
+  background-color: $color-green-light;
+  cursor: pointer;
+  &:last-child {
+    margin-right: 0;
+  }
+  i {
+    color: white;
+    font-size: 30px;
+  }
+}
+
+// tags
+.tags {
+  display: flex;
+  align-items: center;
+  .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    min-width: 60px;
+    border-radius: 50px;
+    margin-left: 5px;
+    background-color: $font-color;
+    color: $color-white;
+    font-size: 12px;
+    font-weight: $font-weight-200;
+    cursor: pointer;
+    &:first-child {
+      margin-left: 20px;
+    }
+  }
+}

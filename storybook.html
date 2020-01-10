@@ -10,6 +10,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/storybook.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
     <script>
       WebFont.load({
@@ -29,6 +31,8 @@
             <a class="list-group-item list-group-item-action" href="#Colors">Colors</a>
             <a class="list-group-item list-group-item-action" href="#Buttons">Buttons</a>
             <a class="list-group-item list-group-item-action" href="#HeaderBox">Header Box</a>
+            <a class="list-group-item list-group-item-action" href="#SocialButtons">Social Buttons</a>
+            <a class="list-group-item list-group-item-action" href="#Tags">Tags</a>
             <a class="list-group-item list-group-item-action" href="#template">template</a>
           </div>
         </div>
@@ -165,6 +169,53 @@
             <div class="header-box corner-green bg-dark text-white">
               Green corner, Gray bg
             </div>
+            <pre>
+              <code>
+                <!-- code -->
+              </code>
+            </pre>
+          </section>
+          <section id="SocialButtons">
+            <h1 class="storybook-title">Social Buttons</h1>
+            <div class="d-flex">
+              <div class="social-button"><i class="fab fa-facebook-f"></i></div>
+              <div class="social-button"><i class="fab fa-twitter"></i></div>
+              <div class="social-button"><i class="fab fa-facebook-messenger"></i></div>
+              <div class="social-button"><i class="fab fa-youtube"></i></div>
+              <div class="social-button"><i class="fab fa-pinterest"></i></div>
+            </div>
+            <pre>
+              <code>
+&lt;div class="social-button"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;div class="social-button"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;div class="social-button"&gt;&lt;i class="fab fa-facebook-messenger"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;div class="social-button"&gt;&lt;i class="fab fa-youtube"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;div class="social-button"&gt;&lt;i class="fab fa-pinterest"&gt;&lt;/i&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </section>
+          <section id="Tags">
+            <h1 class="storybook-title">Tags</h1>
+            <div class="tags">
+              แท็กที่เกี่ยวข้อง
+              <div class="tag">Tag1</div>
+              <div class="tag">Tag2</div>
+              <div class="tag">Tag3</div>
+            </div>
+            <pre>
+              <code>
+&lt;div class="tags"&gt;
+  แท็กที่เกี่ยวข้อง
+  &lt;div class="tag"&gt;Tag1&lt;/div&gt;
+  &lt;div class="tag"&gt;Tag2&lt;/div&gt;
+  &lt;div class="tag"&gt;Tag3&lt;/div&gt;
+&lt;/div&gt;
+              </code>
+            </pre>
+          </section>
+          <section id="tempalte">
+            <h1 class="storybook-title">template</h1>
+            <!-- components -->
             <pre>
               <code>
                 <!-- code -->
