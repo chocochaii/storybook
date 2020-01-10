@@ -7,7 +7,7 @@ p {
   font-size: 14px;
 }
 a {
-  color: $color-green-dark;
+  color: $color-green;
   text-decoration: underline;
   &:hover {
     color: $color-green-light;
@@ -21,7 +21,7 @@ a {
 .row {
   margin-right: -10px;
   margin-left: -10px;
-  > [class*='col-'] {
+  > [class*="col-"] {
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -29,16 +29,16 @@ a {
 
 // font weight
 .font-weight-200 {
-  font-weight: 200;
+  font-weight: $font-weight-200;
 }
 .font-weight-300 {
-  font-weight: 300;
+  font-weight: $font-weight-300;
 }
 .font-weight-400 {
-  font-weight: 400;
+  font-weight: $font-weight-400;
 }
 .font-weight-500 {
-  font-weight: 500;
+  font-weight: $font-weight-500;
 }
 
 // font colors
@@ -48,14 +48,20 @@ a {
 .text-white {
   color: $color-white;
 }
-.text-green-dark {
-  color: $color-green-dark;
+.text-green {
+  color: $color-green;
 }
 .text-green-light {
   color: $color-green-light;
 }
 .text-brown {
   color: $color-brown;
+}
+.text-gray {
+  color: $color-gray;
+}
+.text-gray-light {
+  color: $color-gray-light;
 }
 
 // bg colors
@@ -65,18 +71,28 @@ a {
 .bg-white {
   background-color: $color-white;
 }
-.bg-green-dark {
-  background-color: $color-green-dark;
+.bg-green {
+  background-color: $color-green;
 }
 .bg-green-light {
   background-color: $color-green-light;
 }
+.bg-green-dark {
+  background-color: $color-green-dark;
+}
 .bg-brown {
   background-color: $color-brown;
+}
+.bg-gray {
+  background-color: $color-gray;
+}
+.bg-gray-light {
+  background-color: $color-gray-light;
 }
 
 // button
 .button {
+  position: relative;
   display: inline-flex;
   min-width: 150px;
   align-items: center;
@@ -85,6 +101,7 @@ a {
   height: 65px; // override on usage
   line-height: 1;
   cursor: pointer;
+  outline: none;
 
   &.button-round {
     border-radius: 12px;
@@ -98,12 +115,54 @@ a {
     color: $color-white;
     background-color: $color-green-light;
   }
-  &.button-green-dark {
+  &.button-green {
     color: $color-white;
-    background-color: $color-green-dark;
+    background-color: $color-green;
   }
   &.button-brown {
     color: $color-white;
     background-color: $color-brown;
+  }
+  &.button-gray {
+    color: $color-white;
+    background-color: $color-gray;
+  }
+}
+
+// header box
+.header-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 105px;
+  height: 64px; // override on usage
+  font-weight: $font-weight-300;
+  background-color: $color-gray-light;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0, 58% 100%, 0 100%);
+  }
+
+  &.corner-green-light {
+    &::before {
+      background-color: $color-green-light;
+    }
+  }
+  &.corner-green {
+    &::before {
+      background-color: $color-green;
+    }
+  }
+  &.corner-green-dark {
+    &::before {
+      background-color: $color-green-dark;
+    }
   }
 }
