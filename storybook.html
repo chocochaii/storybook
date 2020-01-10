@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/storybook.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Prompt:200,300,400,500']
+        }
+      });
+    </script>
+    <title>KU | Storybook</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div id="sidenav" class="sidenav">
+            <a class="list-group-item list-group-item-action" href="#Typography">Typography</a>
+            <a class="list-group-item list-group-item-action" href="#Colors">Colors</a>
+            <a class="list-group-item list-group-item-action" href="#Buttons">Buttons</a>
+            <a class="list-group-item list-group-item-action" href="#template">template</a>
+          </div>
+        </div>
+        <div class="col-9" data-spy="scroll" data-target="#sidenav" data-offset="0">
+          <section id="Typography">
+            <h1 class="storybook-title">Typography</h1>
+            <h1>Heading1</h1>
+            <h2>Heading2</h2>
+            <h3>Heading3</h3>
+            <h4>Heading4</h4>
+            <h5>Heading5</h5>
+            <h6>Heading6</h6>
+            <p>This is a paragraph</p>
+            <a href="#">Link</a>
+            <pre>
+              <code>
+&lt;h1&gt;Typography&lt;/h1&gt;
+&lt;h1&gt;Heading1&lt;/h1&gt;
+&lt;h2&gt;Heading2&lt;/h2&gt;
+&lt;h3&gt;Heading3&lt;/h3&gt;
+&lt;h4&gt;Heading4&lt;/h4&gt;
+&lt;h5&gt;Heading5&lt;/h5&gt;
+&lt;h6&gt;Heading6&lt;/h6&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;a href="#"&gt;Link&lt;/a&gt;
+              </code>
+            </pre>
+          </section>
+          <section id="Colors">
+            <h1 class="storybook-title">Colors</h1>
+            <div class="d-flex align-items-center">
+              <div class="color-tile bg-black"></div>
+              <span class="text-black">Black</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="color-tile bg-green-dark"></div>
+              <span class="text-green-dark">Dark green</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="color-tile bg-green-light"></div>
+              <span class="text-green-light">Light green</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="color-tile bg-brown"></div>
+              <span class="text-brown">Brown</span>
+            </div>
+            <pre>
+              <code>
+&lt;div class="color-tile bg-black"&gt;&lt;/div&gt;
+&lt;span class="text-black"&gt;Black&lt;/span&gt;
+
+&lt;div class="color-tile bg-green-dark"&gt;&lt;/div&gt;
+&lt;span class="text-green-dark"&gt;Dark green&lt;/span&gt;
+
+&lt;div class="color-tile bg-green-light"&gt;&lt;/div&gt;
+&lt;span class="text-green-light"&gt;Light green&lt;/span&gt;
+
+&lt;div class="color-tile bg-brown"&gt;&lt;/div&gt;
+&lt;span class="text-brown"&gt;Brown&lt;/span&gt;
+              </code>
+            </pre>
+          </section>
+          <section id="Buttons">
+            <h1 class="storybook-title">Buttons</h1>
+            <h2 class="storybook-title">Normal</h2>
+            <div class="button button-black">Black</div>
+            <div class="button button-green-dark">Dark green</div>
+            <div class="button button-green-light">Light green</div>
+            <div class="button button-brown">Brown</div>
+            <pre>
+              <code>
+&lt;div class="button button-black">Black&lt;/div&gt;
+&lt;div class="button button-green-dark"&gt;Dark green&lt;/div&gt;
+&lt;div class="button button-green-light"&gt;Light green&lt;/div&gt;
+&lt;div class="button button-brown"&gt;Brown&lt;/div&gt;
+              </code>
+            </pre>
+            <h2 class="storybook-title">Rounded button</h2>
+            <div class="button button-round button-black">Black</div>
+            <div class="button button-round button-green-dark">Dark green</div>
+            <div class="button button-round button-green-light">Light green</div>
+            <div class="button button-round button-brown">Brown</div>
+            <pre>
+              <code>
+&lt;div class="button button-round button-black">Black&lt;/div&gt;
+&lt;div class="button button-round button-green-dark"&gt;Dark green&lt;/div&gt;
+&lt;div class="button button-round button-green-light"&gt;Light green&lt;/div&gt;
+&lt;div class="button button-round button-brown"&gt;Brown&lt;/div&gt;
+              </code>
+            </pre>
+          </section>
+          <section id="tempalte">
+            <h1 class="storybook-title">template</h1>
+            <!-- components -->
+            <pre>
+              <code>
+                <!-- code -->
+              </code>
+            </pre>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+body {
+  font-family: $font-family;
+  font-size: 16px;
+  color: $font-color;
+}
+p {
+  font-size: 14px;
+}
+a {
+  color: $color-green-dark;
+  text-decoration: underline;
+  &:hover {
+    color: $color-green-light;
+  }
+}
+
+// layout
+.container {
+  max-width: 1200px;
+}
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+  > [class*='col-'] {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+// font weight
+.font-weight-200 {
+  font-weight: 200;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+
+// font colors
+.text-black {
+  color: $color-black;
+}
+.text-white {
+  color: $color-white;
+}
+.text-green-dark {
+  color: $color-green-dark;
+}
+.text-green-light {
+  color: $color-green-light;
+}
+.text-brown {
+  color: $color-brown;
+}
+
+// bg colors
+.bg-black {
+  background-color: $color-black;
+}
+.bg-white {
+  background-color: $color-white;
+}
+.bg-green-dark {
+  background-color: $color-green-dark;
+}
+.bg-green-light {
+  background-color: $color-green-light;
+}
+.bg-brown {
+  background-color: $color-brown;
+}
+
+// button
+.button {
+  display: inline-flex;
+  min-width: 150px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  height: 65px; // override on usage
+  line-height: 1;
+  cursor: pointer;
+
+  &.button-round {
+    border-radius: 12px;
+  }
+
+  &.button-black {
+    color: $color-white;
+    background-color: $color-black;
+  }
+  &.button-green-light {
+    color: $color-white;
+    background-color: $color-green-light;
+  }
+  &.button-green-dark {
+    color: $color-white;
+    background-color: $color-green-dark;
+  }
+  &.button-brown {
+    color: $color-white;
+    background-color: $color-brown;
+  }
+}
