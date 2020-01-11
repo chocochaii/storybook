@@ -10,6 +10,10 @@
   a {
     text-decoration: none;
   }
+  .list-group-item.active {
+    background-color: $color-green-dark;
+    border-color: $color-green-dark;
+  }
 }
 
 .content {
