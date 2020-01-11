@@ -10,8 +10,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/storybook.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
     <script>
       WebFont.load({
@@ -23,9 +27,9 @@
     <title>KU | Storybook</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-3">
+        <div class="col-2 offset-1">
           <div id="sidenav" class="sidenav">
             <a class="list-group-item list-group-item-action" href="#Typography">Typography</a>
             <a class="list-group-item list-group-item-action" href="#Colors">Colors</a>
@@ -33,10 +37,12 @@
             <a class="list-group-item list-group-item-action" href="#HeaderBox">Header Box</a>
             <a class="list-group-item list-group-item-action" href="#SocialButtons">Social Buttons</a>
             <a class="list-group-item list-group-item-action" href="#Tags">Tags</a>
+            <a class="list-group-item list-group-item-action" href="#Icons">Icons & Accent color</a>
+            <a class="list-group-item list-group-item-action" href="#Form">Form</a>
             <a class="list-group-item list-group-item-action" href="#template">template</a>
           </div>
         </div>
-        <div class="col-9" data-spy="scroll" data-target="#sidenav" data-offset="0">
+        <div class="col-8 content" data-spy="scroll" data-target="#sidenav" data-offset="0">
           <section id="Typography">
             <h1 class="storybook-title">Typography</h1>
             <h1>Heading1</h1>
@@ -46,17 +52,43 @@
             <h5>Heading5</h5>
             <h6>Heading6</h6>
             <p>This is a paragraph</p>
+            <p class="font-weight-200">Font weight 200</p>
+            <p class="font-weight-300">Font weight 300</p>
+            <p class="font-weight-400">Font weight 400</p>
+            <p class="font-weight-500">Font weight 500</p>
+            List items
+            <ul>
+              <li>list item 1</li>
+              <li>list item 2</li>
+              <li>list item 3</li>
+              <li>list item 4</li>
+              <li>list item 5</li>
+            </ul>
             <a href="#">Link</a>
             <pre>
               <code>
-&lt;h1&gt;Typography&lt;/h1&gt;
 &lt;h1&gt;Heading1&lt;/h1&gt;
 &lt;h2&gt;Heading2&lt;/h2&gt;
 &lt;h3&gt;Heading3&lt;/h3&gt;
 &lt;h4&gt;Heading4&lt;/h4&gt;
 &lt;h5&gt;Heading5&lt;/h5&gt;
 &lt;h6&gt;Heading6&lt;/h6&gt;
+
 &lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;p class="font-weight-200"&gt;Font weight 200&lt;/p&gt;
+&lt;p class="font-weight-300"&gt;Font weight 300&lt;/p&gt;
+&lt;p class="font-weight-400"&gt;Font weight 400&lt;/p&gt;
+&lt;p class="font-weight-500"&gt;Font weight 500&lt;/p&gt;
+
+List items
+&lt;ul&gt;
+  &lt;li&gt;list item 1&lt;/li&gt;
+  &lt;li&gt;list item 2&lt;/li&gt;
+  &lt;li&gt;list item 3&lt;/li&gt;
+  &lt;li&gt;list item 4&lt;/li&gt;
+  &lt;li&gt;list item 5&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;a href="#"&gt;Link&lt;/a&gt;
               </code>
             </pre>
@@ -148,33 +180,54 @@
 &lt;div class="button button-round button-gray"&gt;Gray&lt;/div&gt;
               </code>
             </pre>
+            <h2 class="storybook-title">Elevated button</h2>
+            <div class="d-flex flex-column w-25">
+              <div class="button button-elevate button-black">Black</div>
+              <br />
+              <div class="button button-elevate button-green">Green</div>
+              <br />
+              <div class="button button-elevate button-green-light">Light green</div>
+              <br />
+              <div class="button button-elevate button-brown">Brown</div>
+              <br />
+              <div class="button button-elevate button-gray">Gray</div>
+            </div>
+            <pre>
+              <code>
+&lt;div class="button button-elevate button-black"&gt;Black&lt;/div&gt;
+&lt;div class="button button-elevate button-green"&gt;Green&lt;/div&gt;
+&lt;div class="button button-elevate button-green-light"&gt;Light green&lt;/div&gt;
+&lt;div class="button button-elevate button-brown"&gt;Brown&lt;/div&gt;
+&lt;div class="button button-elevate button-gray"&gt;Gray&lt;/div&gt;
+              </code>
+            </pre>
           </section>
           <section id="HeaderBox">
             <h1 class="storybook-title">Header box</h1>
             <div class="header-box corner-green-light bg-gray-light">
               Light green corner, Light gray bg
             </div>
-            <br>
+            <br />
             <div class="header-box corner-green bg-gray-light">
               Green corner, Light gray bg
             </div>
-            <br>
-            <div class="header-box corner-green-light bg-dark text-white">
-              Light green corner, Gray bg
+            <br />
+            <div class="header-box corner-green-light bg-black text-white">
+              Light green corner, Black bg
             </div>
-            <br>
-            <div class="header-box corner-green bg-dark text-white">
-              Green corner, Gray bg
+            <br />
+            <div class="header-box corner-green bg-black text-white">
+              Green corner, Black bg
             </div>
-            <br>
+            <br />
             <div class="header-box corner-green-dark bg-gray-light">
               <i class="fa fa-arrow-up"></i>
               Dark green corner with arrow, Light gray bg
             </div>
-            <br>
-            <div class="header-box corner-green-light bg-dark text-white">
+            <br />
+            <div class="header-box corner-green-light bg-black text-white">
               <i class="fa fa-arrow-up"></i>
-              Light green corner with arrow, Gray bg
+              Light green corner with arrow, Black bg
             </div>
             <pre>
               <code>
@@ -186,12 +239,12 @@
   Green corner, Light gray bg
 &lt;/div&gt;
 
-&lt;div class="header-box corner-green-light bg-dark text-white"&gt;
-  Light green corner, Gray bg
+&lt;div class="header-box corner-green-light bg-black text-white"&gt;
+  Light green corner, Black bg
 &lt;/div&gt;
 
-&lt;div class="header-box corner-green bg-dark text-white"&gt;
-  Green corner, Gray bg
+&lt;div class="header-box corner-green bg-black text-white"&gt;
+  Green corner, Black bg
 &lt;/div&gt;
 
 &lt;div class="header-box corner-green-dark bg-gray-light"&gt;
@@ -199,9 +252,9 @@
   Dark green corner with arrow, Light gray bg
 &lt;/div&gt;
 
-&lt;div class="header-box corner-green-light bg-dark text-white"&gt;
+&lt;div class="header-box corner-green-light bg-black text-white"&gt;
   &lt;i class="fa fa-arrow-up"&gt;&lt;/i&gt;
-  Light green corner with arrow, Gray bg
+  Light green corner with arrow, Black bg
 &lt;/div&gt;
               </code>
             </pre>
@@ -244,16 +297,78 @@
               </code>
             </pre>
           </section>
-          <section id="tempalte">
-            <h1 class="storybook-title">template</h1>
-            <!-- components -->
+          <section id="Icons">
+            <h1 class="storybook-title">Icons & Accent color</h1>
+            <div class="d-flex justify-content-between w-25 mb-2">
+              <i class="fa fa-search icon"></i>
+              <i class="fas fa-phone-volume icon"></i>
+              <i class="far fa-envelope icon"></i>
+              <i class="fa fa-globe icon"></i>
+              <i class="fa fa-chevron-down icon"></i>
+            </div>
+            <div class="d-flex justify-content-between w-25">
+              <span class="text-accent">1.</span>
+              <span class="text-accent">2.</span>
+              <span class="text-accent">3.</span>
+              <p><span class="text-accent font-weight-bold">ผ</span>ลการแข่งขัน</p>
+            </div>
             <pre>
               <code>
-                <!-- code -->
+&lt;i class="fa fa-search icon"&gt;&lt;/i&gt;
+&lt;i class="fas fa-phone-volume icon"&gt;&lt;/i&gt;
+&lt;i class="far fa-envelope icon"&gt;&lt;/i&gt;
+&lt;i class="fa fa-globe icon"&gt;&lt;/i&gt;
+&lt;i class="fa fa-chevron-down icon"&gt;&lt;/i&gt;
+
+&lt;span class="text-accent"&gt;1.&lt;/span&gt;
+&lt;span class="text-accent"&gt;2.&lt;/span&gt;
+&lt;span class="text-accent"&gt;3.&lt;/span&gt;
+&lt;p&gt;
+  &lt;span class="text-accent font-weight-bold"&gt;ผ&lt;/span&gt;ลการแข่งขัน
+&lt;/p&gt;
               </code>
             </pre>
           </section>
-          <section id="tempalte">
+          <section id="Form">
+            <h1 class="storybook-title">Form</h1>
+            <div class="mb-3">
+              <input type="text" class="input" placeholder="ชื่อของคุณ" />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="input" placeholder="อีเมล์ของคุณ" />
+            </div>
+            <div class="mb-3">
+              <textarea class="input" rows="5" placeholder="พิมพ์ข้อความ"></textarea>
+            </div>
+            <div class="mb-3">
+              <div class="select">
+                <select>
+                  <option value="" hidden>เลือกหน่วยงาน</option>
+                  <option value="1">ตัวเลือก 1</option>
+                  <option value="2">ตัวเลือก 2</option>
+                  <option value="3">ตัวเลือก 3</option>
+                </select>
+              </div>
+            </div>
+            <pre>
+              <code>
+&lt;input type="text" class="input" placeholder="ชื่อของคุณ" /&gt;
+&lt;input type="text" class="input" placeholder="อีเมล์ของคุณ" /&gt;
+
+&lt;textarea class="input" rows="5" placeholder="พิมพ์ข้อความ"&gt;&lt;/textarea&gt;
+
+&lt;div class="select"&gt;
+  &lt;select&gt;
+    &lt;option value="" hidden&gt;เลือกหน่วยงาน&lt;/option&gt;
+    &lt;option value="1"&gt;ตัวเลือก 1&lt;/option&gt;
+    &lt;option value="2"&gt;ตัวเลือก 2&lt;/option&gt;
+    &lt;option value="3"&gt;ตัวเลือก 3&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+              </code>
+            </pre>
+          </section>
+          <section id="template">
             <h1 class="storybook-title">template</h1>
             <!-- components -->
             <pre>

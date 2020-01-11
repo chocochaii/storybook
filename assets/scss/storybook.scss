@@ -12,6 +12,11 @@
   }
 }
 
+.content {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
 pre {
   code {
     display: block;
