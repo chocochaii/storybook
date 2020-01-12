@@ -51,7 +51,9 @@ ul {
 .container {
   max-width: $container-width;
 }
-
+.container-fluid {
+  max-width: $container-fluid-width;
+}
 .row {
   // gutter 10px
   margin-right: -10px;
