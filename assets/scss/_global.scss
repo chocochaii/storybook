@@ -4,11 +4,15 @@ body {
   color: $font-color;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 h1 {
-  font-size: 70px;
+  font-size: 40px;
 }
 h2 {
-  font-size: 40px;
+  font-size: 28px;
 }
 
 p {
@@ -195,7 +199,7 @@ ul {
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 105px;
+  padding-left: 95px;
   height: 64px; // override on usage
   font-weight: $font-weight-300;
 
@@ -214,7 +218,7 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-    width: 110px;
+    width: 90px;
     height: 100%;
     z-index: 2;
     clip-path: polygon(0 0, 100% 0, 58% 100%, 0 100%);
@@ -397,7 +401,6 @@ ul {
 // Breadcrumb
 .app-breadcrumb-holder {
   position: relative;
-  margin-bottom: 35px;
 }
 .app-breadcrumb {
   position: absolute;
