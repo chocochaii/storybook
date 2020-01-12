@@ -30,16 +30,18 @@
           <a class="list-group-item list-group-item-action" href="#Buttons">Buttons</a>
           <a class="list-group-item list-group-item-action" href="#HeaderBox">Header Box</a>
           <a class="list-group-item list-group-item-action" href="#SocialButtons">Social Buttons</a>
+          <a class="list-group-item list-group-item-action" href="#IconCount">Icon Count</a>
           <a class="list-group-item list-group-item-action" href="#Tags">Tags</a>
           <a class="list-group-item list-group-item-action" href="#Icons">Icons & Accent color</a>
           <a class="list-group-item list-group-item-action" href="#Form">Form</a>
           <a class="list-group-item list-group-item-action" href="#Breadcrumb">Breadcrumb</a>
           <a class="list-group-item list-group-item-action" href="#ContactCard">Contact Card</a>
+          <a class="list-group-item list-group-item-action" href="#Pagination">Pagination</a>
         </div>
       </div>
       <div class="col-8 content" data-spy="scroll" data-target="#sidenav" data-offset="0">
         <section id="Typography">
-          <h1 class="storybook-title">Typography</h1>
+          <h2 class="storybook-title">Typography</h2>
           <h1>Heading1</h1>
           <h2>Heading2</h2>
           <h3>Heading3</h3>
@@ -106,7 +108,7 @@ List items (no bullets)
             </pre>
         </section>
         <section id="Colors">
-          <h1 class="storybook-title">Colors</h1>
+          <h2 class="storybook-title">Colors</h2>
           <div class="d-flex align-items-center">
             <div class="color-tile bg-black"></div>
             <span class="text-black">Black</span>
@@ -161,8 +163,8 @@ List items (no bullets)
             </pre>
         </section>
         <section id="Buttons">
-          <h1 class="storybook-title">Buttons</h1>
-          <h2 class="storybook-title">Normal</h2>
+          <h2 class="storybook-title">Buttons</h2>
+          <h3 class="storybook-title">Normal</h3>
           <div class="button button-black">Black</div>
           <div class="button button-green">Green</div>
           <div class="button button-green-light">Light green</div>
@@ -215,7 +217,7 @@ List items (no bullets)
             </pre>
         </section>
         <section id="HeaderBox">
-          <h1 class="storybook-title">Header box</h1>
+          <h2 class="storybook-title">Header box</h2>
           <div class="header-box corner-green-light bg-gray-light">
             Light green corner, Light gray bg
           </div>
@@ -272,7 +274,7 @@ List items (no bullets)
             </pre>
         </section>
         <section id="SocialButtons">
-          <h1 class="storybook-title">Social Buttons</h1>
+          <h2 class="storybook-title">Social Buttons</h2>
           <div class="d-flex">
             <div class="social-button"><i class="fab fa-facebook-f"></i></div>
             <div class="social-button"><i class="fab fa-twitter"></i></div>
@@ -290,8 +292,41 @@ List items (no bullets)
               </code>
             </pre>
         </section>
+        <section id="IconCount">
+          <h2 class="storybook-title">Icon Count</h2>
+          <div class="d-flex">
+            <div class="icon-count">
+              <i class="fas fa-thumbs-up"></i>
+              <span class="counter">39</span>
+            </div>
+            <div class="icon-count icon-count-dark">
+              <i class="fas fa-book-open"></i>
+              <span class="counter">222</span>
+            </div>
+            <div class="icon-count icon-count-light">
+              <i class="fas fa-share-alt"></i>
+              <span class="counter">140</span>
+            </div>
+          </div>
+          <pre>
+              <code>
+&lt;div class="icon-count"&gt;
+  &lt;i class="fas fa-thumbs-up"&gt;&lt;/i&gt;
+  &lt;span class="counter"&gt;39&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="icon-count icon-count-dark"&gt;
+  &lt;i class="fas fa-book-open"&gt;&lt;/i&gt;
+  &lt;span class="counter"&gt;222&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="icon-count icon-count-light"&gt;
+  &lt;i class="fas fa-share-alt"&gt;&lt;/i&gt;
+  &lt;span class="counter"&gt;140&lt;/span&gt;
+&lt;/div&gt;
+              </code>
+            </pre>
+        </section>
         <section id="Tags">
-          <h1 class="storybook-title">Tags</h1>
+          <h2 class="storybook-title">Tags</h2>
           <div class="tags">
             แท็กที่เกี่ยวข้อง
             <div class="tag">Tag1</div>
@@ -310,7 +345,7 @@ List items (no bullets)
             </pre>
         </section>
         <section id="Icons">
-          <h1 class="storybook-title">Icons & Accent color</h1>
+          <h2 class="storybook-title">Icons & Accent color</h2>
           <div class="d-flex justify-content-between w-25 mb-2">
             <i class="fa fa-search icon"></i>
             <i class="fas fa-phone-volume icon"></i>
@@ -342,7 +377,7 @@ List items (no bullets)
             </pre>
         </section>
         <section id="Form">
-          <h1 class="storybook-title">Form</h1>
+          <h2 class="storybook-title">Form</h2>
           <div class="mb-3">
             <input type="text" class="input" placeholder="ชื่อของคุณ" />
           </div>
@@ -381,8 +416,9 @@ List items (no bullets)
             </pre>
         </section>
         <section id="Breadcrumb">
-          <h1 class="storybook-title">Breadcrumb</h1>
-          <div class=" app-breadcrumb-holder">
+          <h2 class="storybook-title">Breadcrumb</h2>
+          <header class=" app-breadcrumb-holder" style="height: 64px; border: 1px solid lightgray">
+            Header content
             <div class="app-breadcrumb container">
               <div class="app-breadcrumb-item">
                 <a href="#">Home</a>
@@ -397,10 +433,11 @@ List items (no bullets)
                 <a href="#">Target</a>
               </div>
             </div>
-          </div>
+          </header>
           <pre class="mt-5">
               <code>
-&lt;div class="app-breadcrumb-holder"&gt;
+&lt;header class="app-breadcrumb-holder"&gt;
+  Header content
   &lt;div class="app-breadcrumb container"&gt;
     &lt;div class="app-breadcrumb-item"&gt;
       &lt;a href="#"&gt;Home&lt;/a&gt;
@@ -415,12 +452,12 @@ List items (no bullets)
       &lt;a href="#"&gt;Target&lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+&lt;/header&gt;
               </code>
             </pre>
         </section>
         <section id="ContactCard">
-          <h1 class="storybook-title">Contact Card</h1>
+          <h2 class="storybook-title">Contact Card</h2>
           <div class="contact-cards">
             <div class="contact-card">
               <div class="main-info">
@@ -563,8 +600,71 @@ List items (no bullets)
               </code>
             </pre>
         </section>
+        <section id="Pagination">
+          <h2 class="storybook-title">Pagination</h2>
+          <ul class="pagination app-pagination">
+            <li class="page-item page-item-icon disabled">
+              <a class="page-link" href="#" aria-label="First">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item page-item-icon disabled">
+              <a class="page-link" href="#" aria-label="Previous">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item page-item-icon">
+              <a class="page-link" href="#" aria-label="Next">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="page-item page-item-icon">
+              <a class="page-link" href="#" aria-label="Last">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+          <pre>
+              <code>
+&lt;ul class="pagination app-pagination"&gt;
+  &lt;li class="page-item page-item-icon disabled"&gt;
+    &lt;a class="page-link" href="#" aria-label="First"&gt;
+      &lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="page-item page-item-icon disabled"&gt;
+    &lt;a class="page-link" href="#" aria-label="Previous"&gt;
+      &lt;i class="fas fa-chevron-left" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="page-item active"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;6&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="page-item page-item-icon"&gt;
+    &lt;a class="page-link" href="#" aria-label="Next"&gt;
+      &lt;i class="fas fa-chevron-right" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="page-item page-item-icon"&gt;
+    &lt;a class="page-link" href="#" aria-label="Last"&gt;
+      &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+              </code>
+            </pre>
+        </section>
         <section id="template">
-          <h1 class="storybook-title">template</h1>
+          <h2 class="storybook-title">template</h2>
           <!-- components -->
           <pre>
               <code>

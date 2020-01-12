@@ -4,6 +4,13 @@ body {
   color: $font-color;
 }
 
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 40px;
+}
+
 p {
   font-size: 14px;
 }
@@ -250,9 +257,45 @@ ul {
   }
 }
 
+// icon count
+.icon-count {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+  i {
+    font-size: 18px;
+  }
+  span {
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: $font-weight-300;
+  }
+  &.icon-count-dark {
+    i {
+      color: $color-black;
+    }
+    span {
+      padding: 0 4px;
+      line-height: 20px;
+      color: $color-white;
+      background-color: $color-black;
+      border-radius: 3px;
+    }
+  }
+  &.icon-count-light {
+    span,
+    i {
+      color: $color-gray;
+    }
+  }
+}
+
 // tags
 .tags {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   .tag {
     display: flex;
@@ -262,6 +305,7 @@ ul {
     min-width: 60px;
     border-radius: 50px;
     margin-left: 5px;
+    margin-bottom: 5px;
     background-color: $font-color;
     color: $color-white;
     font-size: 12px;
@@ -381,11 +425,11 @@ ul {
     height: 35px;
     background-color: $color-green;
 
-     a {
+    a {
       font-size: 12px;
       color: $color-white;
       text-decoration: none;
-     }
+    }
 
     &:not(:nth-last-child(-n + 2)) {
       &::after {
@@ -456,5 +500,65 @@ ul {
   .sub-info {
     display: flex;
     word-break: break-all;
+  }
+}
+
+// Pagination
+.app-pagination {
+  align-items: center;
+  li::before {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .page-item {
+    margin: 0 10px;
+    .page-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 48px;
+      padding: 0 11px;
+      font-size: 18px;
+      font-weight: $font-weight-500;
+      color: $color-black;
+      background-color: transparent;
+      border: none;
+      border-radius: 3px;
+      box-shadow: none;
+      outline: none;
+    }
+    &:not(.disabled):not(.active):hover {
+      .page-link {
+        color: $color-white;
+        background-color: $color-black;
+        border-color: $color-black;
+      }
+    }
+    &.page-item-icon {
+      .page-link {
+        color: $color-green;
+        span {
+          font-size: 30px;
+        }
+      }
+      &:first-child,
+      &:last-child {
+        margin: 0;
+      }
+    }
+    &.active {
+      .page-link {
+        color: $color-green-light;
+        background-color: $color-black;
+        border-color: $color-black;
+      }
+    }
+    &.disabled {
+      .page-link {
+        color: $color-gray-light;
+      }
+    }
   }
 }
