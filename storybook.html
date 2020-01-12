@@ -37,6 +37,7 @@
           <a class="list-group-item list-group-item-action" href="#Breadcrumb">Breadcrumb</a>
           <a class="list-group-item list-group-item-action" href="#ContactCard">Contact Card</a>
           <a class="list-group-item list-group-item-action" href="#Pagination">Pagination</a>
+          <a class="list-group-item list-group-item-action" href="#SearchBox">Search Box</a>
         </div>
       </div>
       <div class="col-8 content" data-spy="scroll" data-target="#sidenav" data-offset="0">
@@ -379,13 +380,20 @@ List items (no bullets)
         <section id="Form">
           <h2 class="storybook-title">Form</h2>
           <div class="mb-3">
-            <input type="text" class="input" placeholder="ชื่อของคุณ" />
+            <div class="input">
+              <input type="text" placeholder="ชื่อของคุณ" />
+            </div>
           </div>
           <div class="mb-3">
-            <input type="text" class="input" placeholder="อีเมล์ของคุณ" />
+            <div class="input">
+              <input type="text" placeholder="พิมพ์คำค้นหา" />
+              <i class="fa fa-search icon input-icon"></i>
+            </div>
           </div>
           <div class="mb-3">
-            <textarea class="input" rows="5" placeholder="พิมพ์ข้อความ"></textarea>
+            <div class="input">
+              <textarea rows="5" placeholder="พิมพ์ข้อความ"></textarea>
+            </div>
           </div>
           <div class="mb-3">
             <div class="select">
@@ -399,10 +407,18 @@ List items (no bullets)
           </div>
           <pre>
               <code>
-&lt;input type="text" class="input" placeholder="ชื่อของคุณ" /&gt;
-&lt;input type="text" class="input" placeholder="อีเมล์ของคุณ" /&gt;
+&lt;div class="input"&gt;
+  &lt;input type="text" placeholder="ชื่อของคุณ" /&gt;
+&lt;/div&gt;
 
-&lt;textarea class="input" rows="5" placeholder="พิมพ์ข้อความ"&gt;&lt;/textarea&gt;
+&lt;div class="input"&gt;
+  &lt;input type="text" placeholder="พิมพ์คำค้นหา" /&gt;
+  &lt;i class="fa fa-search icon input-icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;div class="input"&gt;
+  &lt;textarea rows="5" placeholder="พิมพ์ข้อความ"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
 
 &lt;div class="select"&gt;
   &lt;select&gt;
@@ -660,6 +676,61 @@ List items (no bullets)
     &lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+              </code>
+            </pre>
+        </section>
+        <section id="SearchBox">
+          <h2 class="storybook-title">Search Box</h2>
+          <div class="search-box">
+            <div class="input">
+              <input type="text" placeholder="พิมพ์คำค้นหา" />
+              <i class="fa fa-search icon input-icon"></i>
+            </div>
+            <div class="select">
+              <select>
+                <option value="1">เรียงลำดับข้อมูล : ที่มาใหม่</option>
+                <option value="2">เรียงลำดับข้อมูล : ที่ปรับปรุงล่าสุด</option>
+                <option value="3">เรียงลำดับข้อมูล : ที่เปิดดูมากสุด</option>
+              </select>
+            </div>
+            <div class="type-buttons">
+              <div class="type-button active">
+                <i class="fas fa-th icon"></i>
+              </div>
+              <div class="type-button">
+                <i class="fas fa-list icon"></i>
+              </div>
+              <div class="type-button">
+                <i class="fas fa-rss icon"></i>
+              </div>
+            </div>
+          </div>
+          <pre>
+              <code>
+&lt;div class="search-box"&gt;
+  &lt;div class="input"&gt;
+    &lt;input type="text" placeholder="พิมพ์คำค้นหา" /&gt;
+    &lt;i class="fa fa-search icon input-icon"&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;div class="select"&gt;
+    &lt;select&gt;
+      &lt;option value="1"&gt;เรียงลำดับข้อมูล : ที่มาใหม่&lt;/option&gt;
+      &lt;option value="2"&gt;เรียงลำดับข้อมูล : ที่ปรับปรุงล่าสุด&lt;/option&gt;
+      &lt;option value="3"&gt;เรียงลำดับข้อมูล : ที่เปิดดูมากสุด&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class="type-buttons"&gt;
+    &lt;div class="type-button active"&gt;
+      &lt;i class="fas fa-th icon"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class="type-button"&gt;
+      &lt;i class="fas fa-list icon"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class="type-button"&gt;
+      &lt;i class="fas fa-rss icon"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
               </code>
             </pre>
         </section>
