@@ -1,0 +1,20 @@
+#Download {
+  .news-top {
+    height: 443px;
+    border-top: $border-color;
+    border-bottom: $border-color;
+    .cover {
+      position: relative;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .view-arrow {
+      @include rotate(135deg)
+    }
+  }
+}
