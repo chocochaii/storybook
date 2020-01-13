@@ -140,6 +140,9 @@ ul {
 }
 
 // border
+.border {
+  border: $border-bottom;
+}
 .border-bottom {
   border-bottom: $border-bottom;
 }
@@ -630,6 +633,86 @@ ul {
       }
       &:not(:first-child) {
         margin-left: 10px;
+      }
+    }
+  }
+}
+
+// Accordion
+.app-accordion {
+  .app-accordion-title {
+    display: flex;
+    align-items: center;
+    padding: 0 26px;
+    height: 53px;
+    color: $color-white;
+    background-color: $color-black;
+  }
+  .app-accordion-toggle {
+    display: flex;
+    align-items: center;
+    padding: 0 26px;
+    height: 32px;
+    color: $color-white;
+    background-color: $color-green-light;
+    cursor: pointer;
+    i {
+      margin-left: 9px;
+    }
+
+    &.collapsed {
+      i {
+        @include rotate(180deg);
+      }
+    }
+  }
+
+  .app-accordion-list {
+    &:last-child {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    ul {
+      position: relative;
+      margin-top: 10px;
+      padding-left: 26px;
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 26px;
+        transform: translateY(-50%);
+        height: 90%;
+        border-left: 3px solid $color-gray-light;
+      }
+      li {
+        &::before {
+          display: none;
+        }
+        a {
+          padding-left: 30px;
+          color: $font-color;
+          line-height: 1.7;
+          text-decoration: none;
+          border-left: 3px solid $color-gray-light;
+          &::before {
+            content: '\2022';
+            display: inline-block;
+            margin-left: -1em;
+            width: 0.9em;
+            color: $color-gray-light;
+            font-weight: bold;
+            transform: scale(1.3);
+          }
+          &:hover {
+            color: $color-green-light;
+            border-color: $color-green-light;
+            &::before {
+              color: $color-green-light;
+            }
+          }
+        }
       }
     }
   }

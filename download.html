@@ -1,135 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Prompt:200,300,400,500']
+        }
+      });
+    </script>
+    <title>Download</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./assets/css/app.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ['Prompt:200,300,400,500']
-      }
-    });
-  </script>
-  <title>Download</title>
-</head>
-
-<body>
-  <header style="height: 64px;">
-    Header content
-  </header>
-  <section class="app-breadcrumb-holder">
-    <div class="d-flex align-items-center justify-content-center">
-      <h1 class="mb-3">ข่าวประชาสัมพันธ์</h1>
-    </div>
-    <div id="breadcrumb"></div>
-  </section>
-  <section id="Download">
-    <div class="container has-breadcrumb">
-      <div class="search-box">
-        <div class="input">
-          <input type="text" placeholder="พิมพ์คำค้นหา" />
-          <i class="fa fa-search icon input-icon"></i>
-        </div>
-        <div class="select">
-          <select>
-            <option value="1">เรียงลำดับข้อมูล : ที่มาใหม่</option>
-            <option value="2">เรียงลำดับข้อมูล : ที่ปรับปรุงล่าสุด</option>
-            <option value="3">เรียงลำดับข้อมูล : ที่เปิดดูมากสุด</option>
-          </select>
-        </div>
-        <div class="type-buttons">
-          <div class="type-button active">
-            <i class="fas fa-th icon"></i>
-          </div>
-          <div class="type-button">
-            <i class="fas fa-list icon"></i>
-          </div>
-          <div class="type-button">
-            <i class="fas fa-rss icon"></i>
-          </div>
-        </div>
+  <body>
+    <header style="height: 64px;">
+      Header content
+    </header>
+    <section class="app-breadcrumb-holder">
+      <div class="d-flex align-items-center justify-content-center">
+        <h1 class="mb-3">ข่าวประชาสัมพันธ์</h1>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="news-top">
-            <div class="row h-100 no-gutters">
-              <div class="cover col-8">
-                <img src="./assets/images/download/news_top.png">
-              </div>
-              <div class="col-4">
-                <div class="d-flex flex-column bg-green h-100 px-4 pt-3 pb-5">
-                  <div class="d-flex pr-5 mb-3">
-                    <span class="text-white font-weight-200">25 ต.ค. 2562</span>
-                    <div class="icon-count icon-count-white ml-auto">
-                      <i class="fas fa-book-open"></i>
-                      <span class="counter">222</span>
+      <div id="breadcrumb"></div>
+    </section>
+    <section id="Download">
+      <div class="container has-breadcrumb">
+        <div class="search-box">
+          <div class="input">
+            <input type="text" placeholder="พิมพ์คำค้นหา" />
+            <i class="fa fa-search icon input-icon"></i>
+          </div>
+          <div class="select">
+            <select>
+              <option value="1">เรียงลำดับข้อมูล : ที่มาใหม่</option>
+              <option value="2">เรียงลำดับข้อมูล : ที่ปรับปรุงล่าสุด</option>
+              <option value="3">เรียงลำดับข้อมูล : ที่เปิดดูมากสุด</option>
+            </select>
+          </div>
+          <div class="type-buttons">
+            <div class="type-button active">
+              <i class="fas fa-th icon"></i>
+            </div>
+            <div class="type-button">
+              <i class="fas fa-list icon"></i>
+            </div>
+            <div class="type-button">
+              <i class="fas fa-rss icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="news-top">
+              <div class="row h-100 no-gutters">
+                <div class="cover col-8">
+                  <img src="./assets/images/download/news_top.png" />
+                </div>
+                <div class="col-4">
+                  <div class="d-flex flex-column bg-green h-100 px-4 pt-3 pb-5">
+                    <div class="d-flex pr-5 mb-3">
+                      <span class="text-white font-weight-200">25 ต.ค. 2562</span>
+                      <div class="icon-count icon-count-white ml-auto">
+                        <i class="fas fa-book-open"></i>
+                        <span class="counter">222</span>
+                      </div>
+                      <div class="icon-count icon-count-white">
+                        <i class="fas fa-share-alt"></i>
+                        <span class="counter">140</span>
+                      </div>
                     </div>
-                    <div class="icon-count icon-count-white">
-                      <i class="fas fa-share-alt"></i>
-                      <span class="counter">140</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h2 class="text-white mb-3">ประกวดราคาจ้างทำระบบฐานข้อมูลงานทรัพย์สินทางปัญญา จำนวน ๑ ระบบ</h2>
                     <div>
-                      <span class="text-green-light font-weight-200">รายละเอียด</span>
-                      <i class="fa fa-arrow-up text-green-light view-arrow"></i>
+                      <h2 class="text-white mb-3">ประกวดราคาจ้างทำระบบฐานข้อมูลงานทรัพย์สินทางปัญญา จำนวน ๑ ระบบ</h2>
+                      <div>
+                        <span class="text-green-light font-weight-200">รายละเอียด</span>
+                        <i class="fa fa-arrow-up text-green-light view-arrow"></i>
+                      </div>
                     </div>
-                  </div>
-                  <div class="d-flex align-items-center mt-auto">
-                    <img src="./assets/images/icon/pdf_icon.png" class="mr-3">
-                    <span class="text-white font-weight-300">P7-256 [88kb]</span>
-                    <img src="./assets/images/icon/download_icon.png" class="ml-auto">
+                    <div class="d-flex align-items-center mt-auto">
+                      <img src="./assets/images/icon/pdf_icon.png" class="mr-3" />
+                      <span class="text-white font-weight-300">P7-256 [88kb]</span>
+                      <img src="./assets/images/icon/download_icon.png" class="ml-auto" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
-          nav
+        <div class="row mt-4">
+          <div class="col-3">
+            <div class="app-accordion">
+              <span class="app-accordion-title">หมวดหมู่เอกสาร</span>
+              <div class="app-accordion-toggle" data-toggle="collapse" data-target="#DownloadCategory1">
+                เขตบางเขน
+                <i class="fa fa-caret-up"></i>
+              </div>
+              <div id="DownloadCategory1" class="collapse show app-accordion-list border">
+                <ul>
+                  <li><a href="#" class="active">กองคลัง</a></li>
+                  <li><a href="#">คณะเกษตร</a></li>
+                  <li><a href="#">คณะบริหารธุรกิจ</a></li>
+                  <li><a href="#">คณะประมง</a></li>
+                  <li><a href="#">คณะมนุษยศาสตร์</a></li>
+                  <li><a href="#">คณะวนศาสตร์</a></li>
+                  <li><a href="#">คณะวิทยาศาสตร์</a></li>
+                  <li><a href="#">คณะวิศวกรรมศาสตร์</a></li>
+                  <li><a href="#">คณะศึกษาศาสตร์</a></li>
+                  <li><a href="#">คณะเศรษฐศาสตร์</a></li>
+                  <li><a href="#">คณะสถาปัตยกรรมศาสตร์</a></li>
+                  <li><a href="#">คณะสังคมศาสตร์</a></li>
+                  <li><a href="#">คณะสัตวแพทยศาสตร์</a></li>
+                  <li><a href="#">คณะอุตสาหรกรรมเกษตร</a></li>
+                  <li><a href="#">คณะเทคนิคการสัตวแพทย์</a></li>
+                  <li><a href="#">คณะสิ่งแวดล้อม</a></li>
+                </ul>
+              </div>
+              <div class="app-accordion-toggle" data-toggle="collapse" data-target="#DownloadCategory2">
+                เขตกำแพงแสน
+                <i class="fa fa-caret-up"></i>
+              </div>
+              <div id="DownloadCategory2" class="collapse show app-accordion-list border">
+                <ul>
+                  <li><a href="#" class="active">คณะเกษตร กำแพงแสน</a></li>
+                  <li><a href="#">คณะวิศวกรรมศาสตร์ กำแพงแสน</a></li>
+                  <li><a href="#">คณะวิทยาศาสตร์การกีฬา</a></li>
+                  <li><a href="#">คณะศิลปศาสตร์และวิทยาศาสตร์</a></li>
+                  <li><a href="#">คณะศึกษาศาสตร์และพัฒนศาสตร์</a></li>
+                  <li><a href="#">คณะสัตวแพทยศาสตร์ กำแพงแสน</a></li>
+                  <li><a href="#">สำนักหอสมุด กำแพงแสน</a></li>
+                  <li><a href="#">สำนักส่งเสริมและฝึกอบรม กำแพงแสน</a></li>
+                  <li><a href="#">ศูนย์เทคโนโลยีชีวภาพเกษตร</a></li>
+                </ul>
+              </div>
+              <div class="app-accordion-toggle" data-toggle="collapse" data-target="#DownloadCategory3">
+                เขตศรีราชา
+                <i class="fa fa-caret-up"></i>
+              </div>
+              <div id="DownloadCategory3" class="collapse show app-accordion-list border">
+                <ul>
+                  <li><a href="#" class="active">สำนักงานวิทยาเขต</a></li>
+                  <li><a href="#">คณะวิทยาการจัดการ</a></li>
+                  <li><a href="#">คณะวิศวกรรมศาสตร์ ศรีราชา</a></li>
+                  <li><a href="#">คณะวิทยาศาสตร์ ศรีราชา</a></li>
+                  <li><a href="#">คณะเศรษฐศาสตร์ ศรีราชา</a></li>
+                  <li><a href="#">คณะพาณิชยนาวีนานาชาติ</a></li>
+                </ul>
+              </div>
+              <div class="app-accordion-toggle" data-toggle="collapse" data-target="#DownloadCategory4">
+                เขตสกลนคร
+                <i class="fa fa-caret-up"></i>
+              </div>
+              <div id="DownloadCategory4" class="collapse show app-accordion-list border">
+                <ul>
+                  <li><a href="#" class="active">สำนักงานวิทยาเขต</a></li>
+                  <li><a href="#">คณะทรัพยากรธรรมชาติและอุตสาหรกรรมเกษตร</a></li>
+                  <li><a href="#">คณะวิทยาศาสตร์และวิศวกรรมศาสตร์</a></li>
+                  <li><a href="#">คณะศิลปศาสตร์และวิทยาการจัดการ</a></li>
+                  <li><a href="#">คณะสาธารณสุขศาสตร์</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-9">
+            cards
+          </div>
         </div>
-        <div class="col-9">
-          cards
-        </div>
       </div>
-    </div>
-  </section>
-  <footer>
-    Footer content
-  </footer>
+    </section>
+    <footer>
+      Footer content
+    </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
-  <script>
-    $(document).ready(function () {
-      $.ajax({
-        url: "breadcrumb.html",
-        context: document.body,
-        success: function (response) {
-          $('#breadcrumb').html(response);
-        }
+    <script>
+      $(document).ready(function() {
+        $.ajax({
+          url: 'breadcrumb.html',
+          context: document.body,
+          success: function(response) {
+            $('#breadcrumb').html(response);
+          }
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
