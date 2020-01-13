@@ -1,0 +1,46 @@
+.header-box {
+  width: 360px;
+}
+
+.contact-card {
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 312px;
+    height: 297px;
+    background-image: url('../images/gfx_white.png');
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+
+  .input {
+    margin-bottom: 14px;
+  }
+
+  .button-submit {
+    min-width: 130px;
+    height: 46px;
+  }
+}
+
+.map-container {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 470px;
+    background: no-repeat url('../images/contact_us/book.png') top left;
+  }
+}
