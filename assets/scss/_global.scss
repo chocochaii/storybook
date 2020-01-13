@@ -63,7 +63,7 @@ ul {
 .container-fluid {
   max-width: $container-fluid-width;
 }
-.row {
+.row:not(.no-gutters) {
   // gutter 10px
   margin-right: -10px;
   margin-left: -10px;
