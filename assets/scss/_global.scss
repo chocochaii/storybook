@@ -299,10 +299,16 @@ ul {
       border-radius: 3px;
     }
   }
-  &.icon-count-light {
+  &.icon-count-gray {
     span,
     i {
       color: $color-gray;
+    }
+  }
+  &.icon-count-white {
+    span,
+    i {
+      color: $color-white;
     }
   }
 }
