@@ -17,6 +17,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"></link>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
     <script>
       WebFont.load({
@@ -181,6 +182,7 @@ List items (no bullets)
             <div class="button button-green-light">Light green</div>
             <div class="button button-brown">Brown</div>
             <div class="button button-gray">Gray</div>
+            <div class="button button-gray-light">Light gray</div>
             <pre>
               <code>
 &lt;div class="button button-black">Black&lt;/div&gt;
@@ -188,6 +190,7 @@ List items (no bullets)
 &lt;div class="button button-green-light"&gt;Light green&lt;/div&gt;
 &lt;div class="button button-brown"&gt;Brown&lt;/div&gt;
 &lt;div class="button button-gray"&gt;Gray&lt;/div&gt;
+&lt;div class="button button-gray-light"&gt;Light gray&lt;/div&gt;
               </code>
             </pre>
             <h2 class="storybook-title">Rounded button</h2>
@@ -196,6 +199,7 @@ List items (no bullets)
             <div class="button button-round button-green-light">Light green</div>
             <div class="button button-round button-brown">Brown</div>
             <div class="button button-round button-gray">Gray</div>
+            <div class="button button-round button-gray-light">Light gray</div>
             <pre>
               <code>
 &lt;div class="button button-round button-black"&gt;Black&lt;/div&gt;
@@ -203,6 +207,7 @@ List items (no bullets)
 &lt;div class="button button-round button-green-light"&gt;Light green&lt;/div&gt;
 &lt;div class="button button-round button-brown"&gt;Brown&lt;/div&gt;
 &lt;div class="button button-round button-gray"&gt;Gray&lt;/div&gt;
+&lt;div class="button button-round button-gray-light"&gt;Light gray&lt;/div&gt;
               </code>
             </pre>
             <h2 class="storybook-title">Elevated button</h2>
@@ -216,6 +221,8 @@ List items (no bullets)
               <div class="button button-elevate button-brown">Brown</div>
               <br />
               <div class="button button-elevate button-gray">Gray</div>
+              <br />
+              <div class="button button-elevate button-gray-light">Light Gray</div>
             </div>
             <pre>
               <code>
@@ -224,6 +231,7 @@ List items (no bullets)
 &lt;div class="button button-elevate button-green-light"&gt;Light green&lt;/div&gt;
 &lt;div class="button button-elevate button-brown"&gt;Brown&lt;/div&gt;
 &lt;div class="button button-elevate button-gray"&gt;Gray&lt;/div&gt;
+&lt;div class="button button-elevate button-gray-light"&gt;Light gray&lt;/div&gt;
               </code>
             </pre>
           </section>
@@ -467,6 +475,12 @@ List items (no bullets)
               </div>
             </div>
             <div class="mb-3">
+              <div class="input date" data-provide="datepicker">
+                <input type="text" />
+                <i class="far fa-calendar-alt icon input-icon input-group-addon"></i>
+              </div>
+            </div>
+            <div class="mb-3">
               <div class="select">
                 <select>
                   <option value="" hidden>เลือกหน่วยงาน</option>
@@ -475,6 +489,44 @@ List items (no bullets)
                   <option value="3">ตัวเลือก 3</option>
                 </select>
               </div>
+            </div>
+            ค้นหาตามประเภทเนื้อหา
+            <div class="d-flex flex-column">
+              <label class="checkbox">ข่าว
+                <input type="checkbox" id="type-news" name="content-type" value="news" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox">ไฟล์เอกสาร
+                <input type="checkbox" id="type-file" name="content-type" value="file">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox">ศูนย์ข้อมูลข่าวสาร
+                <input type="checkbox" id="type-information" name="content-type" value="information">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox">ข้อมูลเว็บไซต์
+                <input type="checkbox" id="type-web" name="content-type" value="web">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            การเรียงลำดับข้อมูล
+            <div class="d-flex flex-column">
+              <label class="radio">ข่าว
+                <input type="radio" id="type-news" name="content-type" value="news" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              <label class="radio">ไฟล์เอกสาร
+                <input type="radio" id="type-file" name="content-type" value="file">
+                <span class="checkmark"></span>
+              </label>
+              <label class="radio">ศูนย์ข้อมูลข่าวสาร
+                <input type="radio" id="type-information" name="content-type" value="information">
+                <span class="checkmark"></span>
+              </label>
+              <label class="radio">ข้อมูลเว็บไซต์
+                <input type="radio" id="type-web" name="content-type" value="web">
+                <span class="checkmark"></span>
+              </label>
             </div>
             <pre>
               <code>
@@ -498,6 +550,46 @@ List items (no bullets)
     &lt;option value="2"&gt;ตัวเลือก 2&lt;/option&gt;
     &lt;option value="3"&gt;ตัวเลือก 3&lt;/option&gt;
   &lt;/select&gt;
+&lt;/div&gt;
+
+ค้นหาตามประเภทเนื้อหา
+&lt;div class="d-flex flex-column"&gt;
+  &lt;label class="checkbox"&gt;ข่าว
+    &lt;input type="checkbox" id="type-news" name="content-type" value="news" checked="checked"&gt;
+    &lt;span class="checkmark"&gt;&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class="checkbox"&gt;ไฟล์เอกสาร
+    &lt;input type="checkbox" id="type-file" name="content-type" value="file"&gt;
+    &lt;span class="checkmark"&gt;&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class="checkbox"&gt;ศูนย์ข้อมูลข่าวสาร
+    &lt;input type="checkbox" id="type-information" name="content-type" value="information"&gt;
+    &lt;span class="checkmark"&gt;&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class="checkbox"&gt;ข้อมูลเว็บไซต์
+    &lt;input type="checkbox" id="type-web" name="content-type" value="web"&gt;
+    &lt;span class="checkmark"&gt;&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+การเรียงลำดับข้อมูล
+&lt;div class="d-flex flex-column"&gt;
+  &lt;label class="radio"&gt;ข่าว
+    &lt;input type="radio" id="type-news" name="content-type" value="news" checked="checked"&gt;
+    &lt;span class="checkmark"&gt;&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class="radio"&gt;ไฟล์เอกสาร
+    &lt;input type="radio" id="type-file" name="content-type" value="file"&gt;
+    &lt;span class="checkmark"&gt;&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class="radio"&gt;ศูนย์ข้อมูลข่าวสาร
+    &lt;input type="radio" id="type-information" name="content-type" value="information"&gt;
+    &lt;span class="checkmark"&gt;&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class="radio"&gt;ข้อมูลเว็บไซต์
+    &lt;input type="radio" id="type-web" name="content-type" value="web"&gt;
+    &lt;span class="checkmark"&gt;&lt;/span&gt;
+  &lt;/label&gt;
 &lt;/div&gt;
               </code>
             </pre>
@@ -894,5 +986,10 @@ List items (no bullets)
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+      $('.datepicker').datepicker();
+    </script>
   </body>
 </html>

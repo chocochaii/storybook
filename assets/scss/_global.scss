@@ -212,6 +212,10 @@ ul {
     color: $color-white;
     background-color: $color-gray;
   }
+  &.button-gray-light {
+    color: $color-black;
+    background-color: $color-gray-light;
+  }
 }
 
 // header box
@@ -363,7 +367,7 @@ ul {
     width: 100%;
     height: 100%;
     min-height: 40px;
-    border: 1px solid $color-gray;
+    border: 1px solid $color-gray-light;
     outline: none;
     &::placeholder {
       color: $placeholder-color;
@@ -397,7 +401,7 @@ ul {
     height: 100%;
     min-height: 40px;
     outline: none;
-    border: 1px solid $color-gray;
+    border: 1px solid $color-gray-light;
     background-color: transparent;
     &::placeholder {
       color: $placeholder-color;
@@ -435,6 +439,87 @@ ul {
     height: 100%;
     color: $color-green;
     background: linear-gradient(90deg, $color-white calc(100% - 36px), $color-gray-light 36px);
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  user-select: none;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+    &:checked ~ .checkmark {
+      border: 3px solid $color-green;
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 18px;
+    width: 18px;
+    border: 1px solid $color-gray-light;
+    background-color: $color-white;
+
+    &::after {
+      display: none;
+      content: '\f00c';
+      position: absolute;
+      top: -2px;
+      left: 1px;
+      font-family: 'Font Awesome 5 Free';
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 1;
+    }
+  }
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  user-select: none;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+    &:checked ~ .checkmark {
+      border: 1px solid $color-green;
+      background-color: $color-green;
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 16px;
+    width: 16px;
+    background-color: $color-white;
+    border: 1px solid $color-gray-light;
+    border-radius: 50%;
   }
 }
 

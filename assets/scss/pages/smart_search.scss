@@ -2,4 +2,33 @@
   background-image: url('../images/smart_search/bg.png');
   background-position: top right;
   background-repeat: no-repeat;
+
+  .search-main {
+    .input {
+      display: flex;
+      align-items: stretch;
+      input,
+      .button {
+        height: 60px;
+      }
+    }
+  }
+
+  .filter {
+    padding: 30px 40px 20px 40px;
+    .filter-col {
+      &:not(:last-child) {
+        border-right: 1px solid $color-gray-light;
+      }
+    }
+    .search-type {
+      font-weight: $font-weight-500;
+    }
+    .button {
+      height: 46px;
+      &:not(:last-child) {
+        margin-right: 18px;
+      }
+    }
+  }
 }
