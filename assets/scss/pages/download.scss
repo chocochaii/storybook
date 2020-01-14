@@ -14,7 +14,20 @@
       }
     }
     .view-arrow {
-      @include rotate(135deg)
+      @include rotate(135deg);
     }
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 300px;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    background: #fff;
   }
 }

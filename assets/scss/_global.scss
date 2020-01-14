@@ -112,6 +112,9 @@ ul {
 .text-gray-light {
   color: $color-gray-light;
 }
+.text-gray-lighter {
+  color: $color-gray-lighter;
+}
 
 // bg colors
 .bg-black {
@@ -137,6 +140,9 @@ ul {
 }
 .bg-gray-light {
   background-color: $color-gray-light;
+}
+.bg-gray-lighter {
+  background-color: $color-gray-lighter;
 }
 
 // border
@@ -699,6 +705,7 @@ ul {
           line-height: 1.7;
           text-decoration: none;
           border-left: 3px solid $color-gray-light;
+          transition: $all-200ms-ease;
           &::before {
             content: '\2022';
             display: inline-block;
