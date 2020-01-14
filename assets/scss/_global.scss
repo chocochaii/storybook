@@ -140,6 +140,9 @@ ul {
 }
 
 // border
+.border {
+  border: $border-bottom;
+}
 .border-bottom {
   border-bottom: $border-bottom;
 }
