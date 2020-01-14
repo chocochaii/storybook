@@ -612,6 +612,7 @@ ul {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+  background-color: $color-white;
   .input,
   .select {
     width: 240px;
@@ -686,7 +687,7 @@ ul {
       padding-left: $active-line-left-distance;
       padding-right: $active-line-left-distance;
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         z-index: -1;
         top: 50%;
@@ -724,6 +725,49 @@ ul {
             }
           }
         }
+      }
+    }
+  }
+}
+
+// Tabs
+.app-tabs {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 59px;
+  background-color: $color-white;
+  border-bottom: 3px solid $color-black;
+
+  .app-tab {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: $font-weight-300;
+    padding: 0 30px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: $all-200ms-ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(-50%, 50%) rotate(45deg);
+      width: 30px;
+      height: 30px;
+      background-color: $color-green-light;
+      opacity: 0;
+      transition: $all-200ms-ease;
+    }
+
+    &:hover,
+    &.active {
+      color: $color-white;
+      background-color: $color-black;
+      &::before {
+        opacity: 1;
       }
     }
   }
