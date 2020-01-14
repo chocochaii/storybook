@@ -31,4 +31,14 @@
       }
     }
   }
+
+  .result-cards {
+    margin-bottom: 70px;
+    .result-card {
+      display: flex;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
