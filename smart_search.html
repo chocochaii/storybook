@@ -1,88 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/css/app.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          families: ['Prompt:200,300,400,500']
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/app.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Prompt:200,300,400,500']
+      }
+    });
+  </script>
+  <title>Smart Search</title>
+</head>
+
+<body>
+  <header style="height: 64px;">
+    Header content
+  </header>
+  <section class="app-breadcrumb-holder">
+    <div class="d-flex align-items-center justify-content-center bg-white">
+      <h1 class="mb-3">สืบค้นชั้นสูง</h1>
+    </div>
+    <div id="breadcrumb"></div>
+  </section>
+  <section id="smartSearch">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          Filter
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <span>ผลการค้นหา <strong>582,000</strong> รายการ</span>
+          <div>
+            <div class="d-flex mb-4">
+              <div><img src="./assets/images/smart_search/search4.jpg" height="200" width="200" class="mr-4"></div>
+              <div class="d-flex flex-column">
+                <h4>โครงการตอบปัญหาทางชีวเคมี</h4>
+                <span class="font-weight-300">ภาควิชาชีวเคมี คณะวิทยาศาสตร์ มก. เข้าร่วมโครงการแข่งขันตอบปัญหาทางชีวเคมี
+                  ระดับมัธยมศึกษาตอนปลาย ครั้งที่ 2<br>(2nd BIOCHEM CHALLENGE)</span>
+                <a href="#" class="mt-4">https://www.hbs.edu/Pages/default.aspx</a>
+              </div>
+            </div>
+            <div class="d-flex mb-4">
+              <div><img src="./assets/images/smart_search/search2.jpg" height="200" width="200" class="mr-4"></div>
+              <div class="d-flex flex-column">
+                <h4>Ex-Run 2019 วิ่งสุดมันส์กับคนพันธุ์เอ็กซ์ ปีที่ 3</h4>
+                <span class="font-weight-300">Ex-Run 2019 วิ่งสุดมันส์กับคนพันธุ์เอ็กซ์ ปีที่ 3</span>
+                <a href="#" class="mt-4">https://www.hbs.edu/Pages/default.aspx</a>
+              </div>
+            </div>
+            <div class="d-flex mb-4">
+              <div><img src="./assets/images/smart_search/search3.jpg" height="200" width="200" class="mr-4"></div>
+              <div class="d-flex flex-column">
+                <h4>นิสิตวิศวฯ คว้าแชมป์โลก World RoboCup 2019</h4>
+                <span class="font-weight-300">นิสิตคณะวิศวกรรมศาสตร์ ทีม SKUBA-Jr คว้าแชมป์โลก จาก World RoboCup 2019 ในการแข่งขันประเภทหุ่นยนต์ที่ใช้งานภายในบ้านอัตโนมัติ</span>
+                <a href="#" class="mt-4">https://www.hbs.edu/Pages/default.aspx</a>
+              </div>
+            </div>
+            <div class="d-flex mb-4">
+              <div><img src="./assets/images/smart_search/search1.jpg" height="200" width="200" class="mr-4"></div>
+              <div class="d-flex flex-column">
+                <h4>Run for Andaman 2019 International</h4>
+                <span class="font-weight-300">Run for Andaman 2019 International</span>
+                <a href="#" class="mt-4">https://www.hbs.edu/Pages/default.aspx</a>
+              </div>
+            </div>
+            <div class="d-flex mb-4">
+              <div class="d-flex flex-column">
+                <h4>โครงการร่วมบริจาคโลหิต ต่อชีวิตเพื่อนมนุษย์</h4>
+                <span class="font-weight-300">โครงการร่วมบริจาคโลหิต ต่อชีวิตเพื่อนมนุษย์ วันอังคารที่ 24 ธันวาคม 2562 ณ คณะวิทยาศาสตร์</span>
+                <a href="#" class="mt-4">https://www.hbs.edu/Pages/default.aspx</a>
+              </div>
+            </div>
+            <div class="d-flex mb-4">
+              <div class="d-flex flex-column">
+                <h4>ปิดรับสมัครทุนการศึกษา สำหรับนิสิต ปริญญาตรี, โท</h4>
+                <span class="font-weight-300">โครงการร่วมบริจาคโลหิต ต่อชีวิตเพื่อนมนุษย์ วันอังคารที่ 24 ธันวาคม 2562 ณ คณะวิทยาศาสตร์</span>
+                <a href="#" class="mt-4">https://www.hbs.edu/Pages/default.aspx</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    Footer content
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        url: 'breadcrumb.html',
+        context: document.body,
+        success: function (response) {
+          $('#breadcrumb').html(response);
         }
       });
-    </script>
-    <title>Smart Search</title>
-  </head>
+    });
+  </script>
+</body>
 
-  <body>
-    <header style="height: 64px;">
-      Header content
-    </header>
-    <section class="app-breadcrumb-holder">
-      <div class="d-flex align-items-center justify-content-center bg-white">
-        <h1 class="mb-3">สืบค้นชั้นสูง</h1>
-      </div>
-      <div id="breadcrumb"></div>
-    </section>
-    <section id="smartSearch">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            Filter
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            Result
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      Footer content
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      $(document).ready(function() {
-        $.ajax({
-          url: 'breadcrumb.html',
-          context: document.body,
-          success: function(response) {
-            $('#breadcrumb').html(response);
-          }
-        });
-      });
-    </script>
-  </body>
 </html>
