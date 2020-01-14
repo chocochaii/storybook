@@ -668,20 +668,22 @@ ul {
   }
 
   .app-accordion-list {
+    $active-line-left-distance: 20px;
     &:last-child {
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
     ul {
       position: relative;
       margin-top: 10px;
-      padding-left: 26px;
+      padding-left: $active-line-left-distance;
+      padding-right: $active-line-left-distance;
       &::before {
         content: "";
         position: absolute;
         z-index: -1;
         top: 50%;
-        left: 26px;
+        left: $active-line-left-distance;
         transform: translateY(-50%);
         height: 90%;
         border-left: 3px solid $color-gray-light;
@@ -691,7 +693,8 @@ ul {
           display: none;
         }
         a {
-          padding-left: 30px;
+          display: flex;
+          padding-left: 28px;
           color: $font-color;
           line-height: 1.7;
           text-decoration: none;
