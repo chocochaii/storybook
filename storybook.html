@@ -9,6 +9,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./assets/css/app.css" />
     <link rel="stylesheet" href="./assets/css/storybook.css" />
     <link
       rel="stylesheet"
@@ -46,6 +47,7 @@
             <a class="list-group-item list-group-item-action" href="#ContactCard">Contact Card</a>
             <a class="list-group-item list-group-item-action" href="#Pagination">Pagination</a>
             <a class="list-group-item list-group-item-action" href="#SearchBox">Search Box</a>
+            <a class="list-group-item list-group-item-action" href="#NewsCard">News Card</a>
           </div>
         </div>
         <div class="col-8 content" data-spy="scroll" data-target="#sidenav" data-offset="0">
@@ -798,6 +800,65 @@ List items (no bullets)
     &lt;div class="type-button"&gt;
       &lt;i class="fas fa-rss icon"&gt;&lt;/i&gt;
     &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+              </code>
+            </pre>
+          </section>
+          <section id="NewsCard">
+            <h2 class="storybook-title">News Card</h2>
+            <div class="d-flex">
+              <div class="news-card" style="width: 300px; margin-bottom: 20px;">
+                <div class="thumbnail">
+                  <img src="./assets/images/download/news4.png" alt="news4" />
+                </div>
+                <div class="news-detail">
+                  <div class="d-flex justify-content-between text-gray font-weight-300">
+                    25 ต.ค. 2562
+                    <div class="d-flex">
+                      <div class="icon-count icon-count-gray">
+                        <i class="fas fa-book-open"></i>
+                        <span class="counter">222</span>
+                      </div>
+                      <div class="icon-count icon-count-gray">
+                        <i class="fas fa-share-alt"></i>
+                        <span class="counter">140</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="title">นิสิตวิศวฯ คว้าแชมป์โลก World RoboCup 2019</span>
+                  <p class="detail">
+                    นิสิตคณะวิศวกรรมศาสตร์ ทีม SKUBA-Jr คว้าแชมป์โลก จากการแข่งขัน World RoboCup 2019
+                    ในการแข่งขันประเภทหุ่นยนต์ใช้งานภายในบ้านอัตโนมัติ
+                  </p>
+                </div>
+              </div>
+            </div>
+            <pre>
+              <code>
+&lt;div class="news-card"&gt;
+  &lt;div class="thumbnail"&gt;
+    &lt;img src="./assets/images/download/news4.png" alt="news4" /&gt;
+  &lt;/div&gt;
+  &lt;div class="news-detail"&gt;
+    &lt;div class="d-flex justify-content-between text-gray font-weight-300"&gt;
+      25 ต.ค. 2562
+      &lt;div class="d-flex"&gt;
+        &lt;div class="icon-count icon-count-gray"&gt;
+          &lt;i class="fas fa-book-open"&gt;&lt;/i&gt;
+          &lt;span class="counter"&gt;222&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="icon-count icon-count-gray"&gt;
+          &lt;i class="fas fa-share-alt"&gt;&lt;/i&gt;
+          &lt;span class="counter"&gt;140&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class="title"&gt;นิสิตวิศวฯ คว้าแชมป์โลก World RoboCup 2019&lt;/span&gt;
+    &lt;p class="detail"&gt;
+      นิสิตคณะวิศวกรรมศาสตร์ ทีม SKUBA-Jr คว้าแชมป์โลก จากการแข่งขัน World RoboCup 2019
+      ในการแข่งขันประเภทหุ่นยนต์ใช้งานภายในบ้านอัตโนมัติ
+    &lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
               </code>
