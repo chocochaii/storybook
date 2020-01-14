@@ -1,4 +1,23 @@
 #Download {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1890px;
+    height: 1140px;
+    border-bottom: 5px solid black;
+    transform: rotate(-27deg) translate(-38%, -99%);
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1890px;
+    height: 1140px;
+    border-bottom: 1px solid black;
+    transform: rotate(-27deg) translate(-9%, -269%);
+    z-index: -1;
+  }
   .news-top {
     height: 443px;
     border-top: $border-color;
@@ -21,6 +40,7 @@
   .download-card {
     position: relative;
     min-height: 190px;
+    background-color: white;
     transition: $all-200ms-ease;
     &:not(:last-child) {
       margin-bottom: 1rem;
