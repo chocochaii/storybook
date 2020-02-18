@@ -39,10 +39,11 @@
   }
 }
 
-@mixin rotate($degrees) {
-    -webkit-transform: rotate($degrees);
-    -moz-transform: rotate($degrees);
-    -ms-transform: rotate($degrees);
-    -o-transform: rotate($degrees);
-    transform: rotate($degrees);
-  }
+// Text overflow //
+@mixin text-overflow($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
